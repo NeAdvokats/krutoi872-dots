@@ -1,0 +1,23 @@
+/*
+ * ~/.config/rofi/config.rasi
+ * Поведение. Внешний вид — в theme.rasi.
+ */
+
+@import "theme.rasi"
+
+configuration {
+    modes:                  "drun,run,window";
+    show-icons:             false;      /* иконки = лишние цвета */
+
+    display-drun:           ">";
+    display-run:            "$";
+    display-window:         "#";
+
+    drun-display-format:    "{name}";
+    window-format:          "{c}  {t}";
+
+    matching:               "fuzzy";
+    sorting-method:         "fzf";
+    sort:                   true;
+    cycle:                  true;
+}
